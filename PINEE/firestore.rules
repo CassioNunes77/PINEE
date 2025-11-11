@@ -1,0 +1,44 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Regras para a coleção de metas (goals)
+    match /goals/{goalId} {
+      // Permite leitura se o usuário estiver autenticado e o documento pertencer ao usuário
+      allow read: if request.auth != null && 
+                     resource.data.userId == request.auth.uid;
+      
+      // Permite criação se o usuário estiver autenticado e o userId no documento corresponder ao usuário autenticado
+      allow create: if request.auth != null && 
+                       request.resource.data.userId == request.auth.uid;
+      
+      // Permite atualização se o usuário estiver autenticado, o documento pertencer ao usuário e o userId não mudar
+      allow update: if request.auth != null && 
+                       resource.data.userId == request.auth.uid &&
+                       request.resource.data.userId == request.auth.uid;
+      
+      // Permite exclusão se o usuário estiver autenticado e o documento pertencer ao usuário
+      allow delete: if request.auth != null && 
+                       resource.data.userId == request.auth.uid;
+    }
+    
+    // Regras para outras coleções (transactions, categories, users)
+    match /transactions/{transactionId} {
+      allow read, write: if request.auth != null && 
+                            resource.data.userId == request.auth.uid;
+    }
+    
+    match /categories/{categoryId} {
+      allow read: if request.auth == null || 
+                     resource.data.userId == request.auth.uid ||
+                     resource.data.isSystem == true;
+      allow write: if request.auth != null && 
+                      (request.resource.data.userId == request.auth.uid ||
+                       resource.data.isSystem == false);
+    }
+    
+    match /users/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

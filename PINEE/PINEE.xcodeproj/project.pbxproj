@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F30CED13D6B39E884844FFA /* libPods-PINEE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AE004FCEE95EA4B737A6A5 /* libPods-PINEE.a */; };
+		DF30206E2E14DF240048F2C1 /* DevView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF30206D2E14DF240048F2C1 /* DevView.swift */; };
+		DF34469C2E12E3DB00E23E65 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF34469B2E12E3DA00E23E65 /* IAPManager.swift */; };
+		DF40F4D62E2481D9004A27DD /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF40F4D52E2481D9004A27DD /* AddGoalView.swift */; };
+		DF4DA4692E1750AA0095B306 /* TransferInvestmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4DA4682E1750AA0095B306 /* TransferInvestmentView.swift */; };
+		DF57C45F2E04F6EC00F02C5B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF57C45E2E04F6EC00F02C5B /* ProfileView.swift */; };
+		DF5AC3362EBDC733008F2CFA /* FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5AC3352EBDC732008F2CFA /* FeedbackService.swift */; };
+		DF860A672EB844DF00622301 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF860A662EB844DF00622301 /* MoreView.swift */; };
+		DF860A692EB8489900622301 /* PremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF860A682EB8489900622301 /* PremiumView.swift */; };
+		DF8CBC542E4E1E6F008B2930 /* TransferIncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8CBC532E4E1E6F008B2930 /* TransferIncomeView.swift */; };
+		DFB08DF22E0A3F5600B241EC /* Models in Resources */ = {isa = PBXBuildFile; fileRef = DFB08DF12E0A3F5600B241EC /* Models */; };
+		DFB4CAB52E03883700F19EC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFB4CAB42E03883700F19EC2 /* GoogleService-Info.plist */; };
+		DFBDB7B52EBC4F0A00DEE75C /* DailyNotificationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB7B12EBC4F0A00DEE75C /* DailyNotificationChecker.swift */; };
+		DFBDB7B62EBC4F0A00DEE75C /* NotificationAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB7B22EBC4F0A00DEE75C /* NotificationAIService.swift */; };
+		DFBDB7B72EBC4F0A00DEE75C /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB7B32EBC4F0A00DEE75C /* NotificationManager.swift */; };
+		DFBDB7B82EBC4F0A00DEE75C /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB7B42EBC4F0A00DEE75C /* NotificationsView.swift */; };
+		DFBDB7BA2EBC5AA700DEE75C /* PushNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBDB7B92EBC5AA700DEE75C /* PushNotificationService.swift */; };
+		DFBF0CD12E033A3800922079 /* PINEEApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF0CD02E033A3800922079 /* PINEEApp.swift */; };
+		DFBF0CD32E033A3800922079 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF0CD22E033A3800922079 /* ContentView.swift */; };
+		DFBF0CD52E033A3B00922079 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBF0CD42E033A3B00922079 /* Assets.xcassets */; };
+		DFBF0CD82E033A3B00922079 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBF0CD72E033A3B00922079 /* Preview Assets.xcassets */; };
+		DFBF0CE22E033A3B00922079 /* PINEETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF0CE12E033A3B00922079 /* PINEETests.swift */; };
+		DFBF0CEC2E033A3B00922079 /* PINEEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF0CEB2E033A3B00922079 /* PINEEUITests.swift */; };
+		DFBF0CEE2E033A3B00922079 /* PINEEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBF0CED2E033A3B00922079 /* PINEEUITestsLaunchTests.swift */; };
+		DFC7B4672E0A66C200C932EA /* SwipeTransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7B4662E0A66C200C932EA /* SwipeTransactionItem.swift */; };
+		DFDAAAD82E0922A40043B9AA /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDAAAD72E0922A40043B9AA /* TransactionsView.swift */; };
+		DFDAAADA2E09BD850043B9AA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDAAAD92E09BD850043B9AA /* SettingsView.swift */; };
+		DFDAAADC2E09BDAE0043B9AA /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDAAADB2E09BDAE0043B9AA /* ReportsView.swift */; };
+		DFDC13892E0466540001F9EC /* FirebaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC13882E0466540001F9EC /* FirebaseAppDelegate.swift */; };
+		DFDC138B2E046A490001F9EC /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC138A2E046A490001F9EC /* AddTransactionView.swift */; };
+		DFDC138D2E046A660001F9EC /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC138C2E046A660001F9EC /* TransactionModel.swift */; };
+		DFDC138F2E046A9F0001F9EC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDC138E2E046A9F0001F9EC /* ColorExtension.swift */; };
+		DFE3FA2C2E04D4D800656218 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FA2B2E04D4D800656218 /* LoginView.swift */; };
+		DFE3FA2E2E04D61500656218 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FA2D2E04D61400656218 /* AuthViewModel.swift */; };
+		DFFB7C1B2FEA1D5E004F9D3D /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB7C1A2FEA1D5E004F9D3D /* FeedbackView.swift */; };
+		DFFB7C1D2FEA1DF2004F9D3D /* LocalCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFB7C1C2FEA1DF2004F9D3D /* LocalCacheManager.swift */; };
+		DFFF4DAA2EBEF09E00DD6409 /* HelpCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF4DA92EBEF09E00DD6409 /* HelpCenterView.swift */; };
+		DFFF4DAC2EBFC85500DD6409 /* RecentNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF4DAB2EBFC85500DD6409 /* RecentNotificationsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFBF0CDE2E033A3B00922079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBF0CC52E033A3800922079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBF0CCC2E033A3800922079;
+			remoteInfo = PINEE;
+		};
+		DFBF0CE82E033A3B00922079 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBF0CC52E033A3800922079 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBF0CCC2E033A3800922079;
+			remoteInfo = PINEE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16998DCA1E3EFDF8C06B9B37 /* Pods-PINEE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PINEE.release.xcconfig"; path = "Target Support Files/Pods-PINEE/Pods-PINEE.release.xcconfig"; sourceTree = "<group>"; };
+		58B4CC7FB0E241060D8B5954 /* Pods-PINEE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PINEE.debug.xcconfig"; path = "Target Support Files/Pods-PINEE/Pods-PINEE.debug.xcconfig"; sourceTree = "<group>"; };
+		DF30206D2E14DF240048F2C1 /* DevView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevView.swift; sourceTree = "<group>"; };
+		DF34469B2E12E3DA00E23E65 /* IAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		DF40F4D52E2481D9004A27DD /* AddGoalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
+		DF4DA4682E1750AA0095B306 /* TransferInvestmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferInvestmentView.swift; sourceTree = "<group>"; };
+		DF57C45E2E04F6EC00F02C5B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DF5AC3352EBDC732008F2CFA /* FeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackService.swift; sourceTree = "<group>"; };
+		DF860A662EB844DF00622301 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		DF860A682EB8489900622301 /* PremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumView.swift; sourceTree = "<group>"; };
+		DF8CBC532E4E1E6F008B2930 /* TransferIncomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferIncomeView.swift; sourceTree = "<group>"; };
+		DFB08DF12E0A3F5600B241EC /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		DFB4CAB42E03883700F19EC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DFBDB7B12EBC4F0A00DEE75C /* DailyNotificationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNotificationChecker.swift; sourceTree = "<group>"; };
+		DFBDB7B22EBC4F0A00DEE75C /* NotificationAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAIService.swift; sourceTree = "<group>"; };
+		DFBDB7B32EBC4F0A00DEE75C /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		DFBDB7B42EBC4F0A00DEE75C /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		DFBDB7B92EBC5AA700DEE75C /* PushNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationService.swift; sourceTree = "<group>"; };
+		DFBF0CCD2E033A3800922079 /* PINEE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PINEE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBF0CD02E033A3800922079 /* PINEEApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINEEApp.swift; sourceTree = "<group>"; };
+		DFBF0CD22E033A3800922079 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DFBF0CD42E033A3B00922079 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFBF0CD72E033A3B00922079 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFBF0CDD2E033A3B00922079 /* PINEETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PINEETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBF0CE12E033A3B00922079 /* PINEETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINEETests.swift; sourceTree = "<group>"; };
+		DFBF0CE72E033A3B00922079 /* PINEEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PINEEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBF0CEB2E033A3B00922079 /* PINEEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINEEUITests.swift; sourceTree = "<group>"; };
+		DFBF0CED2E033A3B00922079 /* PINEEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINEEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DFC754782E0903FF0062645E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DFC7B4662E0A66C200C932EA /* SwipeTransactionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTransactionItem.swift; sourceTree = "<group>"; };
+		DFDAAAD72E0922A40043B9AA /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		DFDAAAD92E09BD850043B9AA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DFDAAADB2E09BDAE0043B9AA /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		DFDC13882E0466540001F9EC /* FirebaseAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegate.swift; sourceTree = "<group>"; };
+		DFDC138A2E046A490001F9EC /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		DFDC138C2E046A660001F9EC /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		DFDC138E2E046A9F0001F9EC /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		DFE3FA2B2E04D4D800656218 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DFE3FA2D2E04D61400656218 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		DFFB7C1A2FEA1D5E004F9D3D /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		DFFB7C1C2FEA1DF2004F9D3D /* LocalCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCacheManager.swift; sourceTree = "<group>"; };
+		DFFF4DA92EBEF09E00DD6409 /* HelpCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterView.swift; sourceTree = "<group>"; };
+		DFFF4DAB2EBFC85500DD6409 /* RecentNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentNotificationsView.swift; sourceTree = "<group>"; };
+		F0AE004FCEE95EA4B737A6A5 /* libPods-PINEE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PINEE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFBF0CCA2E033A3800922079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F30CED13D6B39E884844FFA /* libPods-PINEE.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBF0CDA2E033A3B00922079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBF0CE42E033A3B00922079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C3DA8A41679C17E557037D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58B4CC7FB0E241060D8B5954 /* Pods-PINEE.debug.xcconfig */,
+				16998DCA1E3EFDF8C06B9B37 /* Pods-PINEE.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DFBF0CC42E033A3800922079 = {
+			isa = PBXGroup;
+			children = (
+				DFB4CAB42E03883700F19EC2 /* GoogleService-Info.plist */,
+				DFBF0CCF2E033A3800922079 /* PINEE */,
+				DFBF0CE02E033A3B00922079 /* PINEETests */,
+				DFBF0CEA2E033A3B00922079 /* PINEEUITests */,
+				DFBF0CCE2E033A3800922079 /* Products */,
+				52C3DA8A41679C17E557037D /* Pods */,
+				FFABE007E3332B8D2C74EC7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFBF0CCE2E033A3800922079 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFBF0CCD2E033A3800922079 /* PINEE.app */,
+				DFBF0CDD2E033A3B00922079 /* PINEETests.xctest */,
+				DFBF0CE72E033A3B00922079 /* PINEEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFBF0CCF2E033A3800922079 /* PINEE */ = {
+			isa = PBXGroup;
+			children = (
+				DF34469B2E12E3DA00E23E65 /* IAPManager.swift */,
+				DFB08DF12E0A3F5600B241EC /* Models */,
+				DFC754782E0903FF0062645E /* Info.plist */,
+				DFBF0CD02E033A3800922079 /* PINEEApp.swift */,
+				DFDC13882E0466540001F9EC /* FirebaseAppDelegate.swift */,
+				DF5AC3352EBDC732008F2CFA /* FeedbackService.swift */,
+				DFFB7C1A2FEA1D5E004F9D3D /* FeedbackView.swift */,
+				DFFB7C1C2FEA1DF2004F9D3D /* LocalCacheManager.swift */,
+				DFBF0CD22E033A3800922079 /* ContentView.swift */,
+				DF8CBC532E4E1E6F008B2930 /* TransferIncomeView.swift */,
+				DF30206D2E14DF240048F2C1 /* DevView.swift */,
+				DFBDB7B12EBC4F0A00DEE75C /* DailyNotificationChecker.swift */,
+				DFBDB7B22EBC4F0A00DEE75C /* NotificationAIService.swift */,
+				DFFF4DA92EBEF09E00DD6409 /* HelpCenterView.swift */,
+				DFBDB7B32EBC4F0A00DEE75C /* NotificationManager.swift */,
+				DFFF4DAB2EBFC85500DD6409 /* RecentNotificationsView.swift */,
+				DFBDB7B42EBC4F0A00DEE75C /* NotificationsView.swift */,
+				DF860A682EB8489900622301 /* PremiumView.swift */,
+				DFDAAAD92E09BD850043B9AA /* SettingsView.swift */,
+				DFDAAADB2E09BDAE0043B9AA /* ReportsView.swift */,
+				DF4DA4682E1750AA0095B306 /* TransferInvestmentView.swift */,
+				DFDAAAD72E0922A40043B9AA /* TransactionsView.swift */,
+				DFBF0CD42E033A3B00922079 /* Assets.xcassets */,
+				DFBF0CD62E033A3B00922079 /* Preview Content */,
+				DFDC138A2E046A490001F9EC /* AddTransactionView.swift */,
+				DFDC138C2E046A660001F9EC /* TransactionModel.swift */,
+				DF860A662EB844DF00622301 /* MoreView.swift */,
+				DF40F4D52E2481D9004A27DD /* AddGoalView.swift */,
+				DFDC138E2E046A9F0001F9EC /* ColorExtension.swift */,
+				DFE3FA2B2E04D4D800656218 /* LoginView.swift */,
+				DFE3FA2D2E04D61400656218 /* AuthViewModel.swift */,
+				DF57C45E2E04F6EC00F02C5B /* ProfileView.swift */,
+				DFBDB7B92EBC5AA700DEE75C /* PushNotificationService.swift */,
+				DFC7B4662E0A66C200C932EA /* SwipeTransactionItem.swift */,
+			);
+			path = PINEE;
+			sourceTree = "<group>";
+		};
+		DFBF0CD62E033A3B00922079 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DFBF0CD72E033A3B00922079 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFBF0CE02E033A3B00922079 /* PINEETests */ = {
+			isa = PBXGroup;
+			children = (
+				DFBF0CE12E033A3B00922079 /* PINEETests.swift */,
+			);
+			path = PINEETests;
+			sourceTree = "<group>";
+		};
+		DFBF0CEA2E033A3B00922079 /* PINEEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFBF0CEB2E033A3B00922079 /* PINEEUITests.swift */,
+				DFBF0CED2E033A3B00922079 /* PINEEUITestsLaunchTests.swift */,
+			);
+			path = PINEEUITests;
+			sourceTree = "<group>";
+		};
+		FFABE007E3332B8D2C74EC7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE004FCEE95EA4B737A6A5 /* libPods-PINEE.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFBF0CCC2E033A3800922079 /* PINEE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBF0CF12E033A3C00922079 /* Build configuration list for PBXNativeTarget "PINEE" */;
+			buildPhases = (
+				2E86C38B8C92C6D3252CE636 /* [CP] Check Pods Manifest.lock */,
+				DFBF0CC92E033A3800922079 /* Sources */,
+				DFBF0CCA2E033A3800922079 /* Frameworks */,
+				DFBF0CCB2E033A3800922079 /* Resources */,
+				62671DAA79E72C5C0327CF3E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PINEE;
+			productName = PINEE;
+			productReference = DFBF0CCD2E033A3800922079 /* PINEE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFBF0CDC2E033A3B00922079 /* PINEETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBF0CF42E033A3C00922079 /* Build configuration list for PBXNativeTarget "PINEETests" */;
+			buildPhases = (
+				DFBF0CD92E033A3B00922079 /* Sources */,
+				DFBF0CDA2E033A3B00922079 /* Frameworks */,
+				DFBF0CDB2E033A3B00922079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFBF0CDF2E033A3B00922079 /* PBXTargetDependency */,
+			);
+			name = PINEETests;
+			productName = PINEETests;
+			productReference = DFBF0CDD2E033A3B00922079 /* PINEETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFBF0CE62E033A3B00922079 /* PINEEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBF0CF72E033A3C00922079 /* Build configuration list for PBXNativeTarget "PINEEUITests" */;
+			buildPhases = (
+				DFBF0CE32E033A3B00922079 /* Sources */,
+				DFBF0CE42E033A3B00922079 /* Frameworks */,
+				DFBF0CE52E033A3B00922079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFBF0CE92E033A3B00922079 /* PBXTargetDependency */,
+			);
+			name = PINEEUITests;
+			productName = PINEEUITests;
+			productReference = DFBF0CE72E033A3B00922079 /* PINEEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFBF0CC52E033A3800922079 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					DFBF0CCC2E033A3800922079 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DFBF0CDC2E033A3B00922079 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DFBF0CCC2E033A3800922079;
+					};
+					DFBF0CE62E033A3B00922079 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DFBF0CCC2E033A3800922079;
+					};
+				};
+			};
+			buildConfigurationList = DFBF0CC82E033A3800922079 /* Build configuration list for PBXProject "PINEE" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFBF0CC42E033A3800922079;
+			productRefGroup = DFBF0CCE2E033A3800922079 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFBF0CCC2E033A3800922079 /* PINEE */,
+				DFBF0CDC2E033A3B00922079 /* PINEETests */,
+				DFBF0CE62E033A3B00922079 /* PINEEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFBF0CCB2E033A3800922079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBF0CD82E033A3B00922079 /* Preview Assets.xcassets in Resources */,
+				DFBF0CD52E033A3B00922079 /* Assets.xcassets in Resources */,
+				DFB08DF22E0A3F5600B241EC /* Models in Resources */,
+				DFB4CAB52E03883700F19EC2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBF0CDB2E033A3B00922079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBF0CE52E033A3B00922079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E86C38B8C92C6D3252CE636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PINEE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62671DAA79E72C5C0327CF3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PINEE/Pods-PINEE-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PINEE/Pods-PINEE-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PINEE/Pods-PINEE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFBF0CC92E033A3800922079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF34469C2E12E3DB00E23E65 /* IAPManager.swift in Sources */,
+				DF40F4D62E2481D9004A27DD /* AddGoalView.swift in Sources */,
+				DFDC138D2E046A660001F9EC /* TransactionModel.swift in Sources */,
+				DF57C45F2E04F6EC00F02C5B /* ProfileView.swift in Sources */,
+				DFE3FA2C2E04D4D800656218 /* LoginView.swift in Sources */,
+				DF4DA4692E1750AA0095B306 /* TransferInvestmentView.swift in Sources */,
+				DF5AC3362EBDC733008F2CFA /* FeedbackService.swift in Sources */,
+				DFFB7C1B2FEA1D5E004F9D3D /* FeedbackView.swift in Sources */,
+				DFFB7C1D2FEA1DF2004F9D3D /* LocalCacheManager.swift in Sources */,
+				DF860A692EB8489900622301 /* PremiumView.swift in Sources */,
+				DFDC13892E0466540001F9EC /* FirebaseAppDelegate.swift in Sources */,
+				DFDC138B2E046A490001F9EC /* AddTransactionView.swift in Sources */,
+				DFFF4DAC2EBFC85500DD6409 /* RecentNotificationsView.swift in Sources */,
+				DF8CBC542E4E1E6F008B2930 /* TransferIncomeView.swift in Sources */,
+				DFBDB7B52EBC4F0A00DEE75C /* DailyNotificationChecker.swift in Sources */,
+				DFBDB7BA2EBC5AA700DEE75C /* PushNotificationService.swift in Sources */,
+				DFFF4DAA2EBEF09E00DD6409 /* HelpCenterView.swift in Sources */,
+				DFBDB7B62EBC4F0A00DEE75C /* NotificationAIService.swift in Sources */,
+				DFBDB7B72EBC4F0A00DEE75C /* NotificationManager.swift in Sources */,
+				DFBDB7B82EBC4F0A00DEE75C /* NotificationsView.swift in Sources */,
+				DFDAAAD82E0922A40043B9AA /* TransactionsView.swift in Sources */,
+				DFE3FA2E2E04D61500656218 /* AuthViewModel.swift in Sources */,
+				DFDC138F2E046A9F0001F9EC /* ColorExtension.swift in Sources */,
+				DF30206E2E14DF240048F2C1 /* DevView.swift in Sources */,
+				DF860A672EB844DF00622301 /* MoreView.swift in Sources */,
+				DFC7B4672E0A66C200C932EA /* SwipeTransactionItem.swift in Sources */,
+				DFBF0CD32E033A3800922079 /* ContentView.swift in Sources */,
+				DFBF0CD12E033A3800922079 /* PINEEApp.swift in Sources */,
+				DFDAAADC2E09BDAE0043B9AA /* ReportsView.swift in Sources */,
+				DFDAAADA2E09BD850043B9AA /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBF0CD92E033A3B00922079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBF0CE22E033A3B00922079 /* PINEETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBF0CE32E033A3B00922079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBF0CEE2E033A3B00922079 /* PINEEUITestsLaunchTests.swift in Sources */,
+				DFBF0CEC2E033A3B00922079 /* PINEEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFBF0CDF2E033A3B00922079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBF0CCC2E033A3800922079 /* PINEE */;
+			targetProxy = DFBF0CDE2E033A3B00922079 /* PBXContainerItemProxy */;
+		};
+		DFBF0CE92E033A3B00922079 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBF0CCC2E033A3800922079 /* PINEE */;
+			targetProxy = DFBF0CE82E033A3B00922079 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFBF0CEF2E033A3B00922079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFBF0CF02E033A3B00922079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFBF0CF22E033A3C00922079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B4CC7FB0E241060D8B5954 /* Pods-PINEE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"PINEE/Preview Content\"";
+				DEVELOPMENT_TEAM = 76ZB8M2L49;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PINEE/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = focus1.PINEE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFBF0CF32E033A3C00922079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16998DCA1E3EFDF8C06B9B37 /* Pods-PINEE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_ASSET_PATHS = "\"PINEE/Preview Content\"";
+				DEVELOPMENT_TEAM = 76ZB8M2L49;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PINEE/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = focus1.PINEE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFBF0CF52E033A3C00922079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 76ZB8M2L49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = focus.PINEETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PINEE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PINEE";
+			};
+			name = Debug;
+		};
+		DFBF0CF62E033A3C00922079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 76ZB8M2L49;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = focus.PINEETests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PINEE.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PINEE";
+			};
+			name = Release;
+		};
+		DFBF0CF82E033A3C00922079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 76ZB8M2L49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = focus.PINEEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PINEE;
+			};
+			name = Debug;
+		};
+		DFBF0CF92E033A3C00922079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 76ZB8M2L49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = focus.PINEEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PINEE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFBF0CC82E033A3800922079 /* Build configuration list for PBXProject "PINEE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBF0CEF2E033A3B00922079 /* Debug */,
+				DFBF0CF02E033A3B00922079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBF0CF12E033A3C00922079 /* Build configuration list for PBXNativeTarget "PINEE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBF0CF22E033A3C00922079 /* Debug */,
+				DFBF0CF32E033A3C00922079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBF0CF42E033A3C00922079 /* Build configuration list for PBXNativeTarget "PINEETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBF0CF52E033A3C00922079 /* Debug */,
+				DFBF0CF62E033A3C00922079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBF0CF72E033A3C00922079 /* Build configuration list for PBXNativeTarget "PINEEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBF0CF82E033A3C00922079 /* Debug */,
+				DFBF0CF92E033A3C00922079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFBF0CC52E033A3800922079 /* Project object */;
+}
